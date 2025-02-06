@@ -1,0 +1,51 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+p,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+div,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'Montserrat';
+}
+
+::-webkit-scrollbar {
+  height: 2px;
+  width: 3.5px !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #dee1e7;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::placeholder {
+  color: #aaa;
+}
