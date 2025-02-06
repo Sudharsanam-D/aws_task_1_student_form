@@ -35,7 +35,7 @@ export class BackendStack extends cdk.Stack {
       environment: {
         DB_HOST: 'student.c9ggkgk4as2p.eu-north-1.rds.amazonaws.com',
         DB_USER: "student",
-        DB_PASSWORD: "root#123",
+        DB_PASSWORD: "root#123", 
         DB_NAME: "student",
       },
     });
