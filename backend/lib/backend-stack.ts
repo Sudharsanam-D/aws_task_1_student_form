@@ -9,14 +9,6 @@ export class BackendStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) { 
     super(scope, id, props);
 
-    // Create an RDS Serverless Cluster (Aurora MySQL)
-    // const dbCluster = new rds.ServerlessCluster(this, "MyRdsServerless", {
-    //   engine: rds.DatabaseClusterEngine.AURORA_MYSQL,
-    //   defaultDatabaseName: "student",
-    //   credentials: rds.Credentials.fromPassword("student", cdk.SecretValue.unsafePlainText("root#123")),
-    //   enableDataApi: true, // Allows Lambda to access RDS without needing a VPC
-    // });
-
     // IAM Role for Lambda to access RDS
     const lambdaRole = new iam.Role(this, "LambdaExecutionRole", {
       assumedBy: new iam.ServicePrincipal("lambda.amazonaws.com"),
